@@ -20,7 +20,7 @@ isUser(username) {
   if (username === 'Paco') {
     return true;
   } else {
-    false;
+    return false;
   }
 }
 
