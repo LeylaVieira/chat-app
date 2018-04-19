@@ -4,7 +4,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'chat-messagebox',
   templateUrl: './messagebox.component.html',
-  styleUrls: ['./messagebox.component.css']
+  styleUrls: ['./messagebox.component.scss']
 })
 export class MessageboxComponent implements OnInit {
   @Output() clicked = new EventEmitter<object>(); // Para almacenar el objeto mensaje para emitir al padre

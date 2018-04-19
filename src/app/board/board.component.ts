@@ -4,7 +4,7 @@ import { NgModel } from '@angular/forms';
 @Component({
   selector: 'chat-board',
   templateUrl: './board.component.html',
-  styleUrls: ['./board.component.css']
+  styleUrls: ['./board.component.scss']
 })
 export class BoardComponent implements OnInit {
 // messagetext: string = "este es el board";
