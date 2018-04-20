@@ -25,7 +25,7 @@ export class MessageboxComponent implements OnInit {
     // console.info("Click en el botón..");
     // console.info(this.username);
     this.clicked.emit({
-      username: this.username || 'Paco',
+      username: this.username || 'User',
       messagetext: this.messagetext
     });
   }

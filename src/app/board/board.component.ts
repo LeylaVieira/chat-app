@@ -7,21 +7,21 @@ import { NgModel } from '@angular/forms';
   styleUrls: ['./board.component.scss']
 })
 export class BoardComponent implements OnInit {
-// messagetext: string = "este es el board";
-@Input() messages: Array<any>;
+  // messagetext: string = "este es el board";
+  @Input() messages: Array<any>;
 
-constructor() { }
+  constructor() { }
 
-ngOnInit() {
-}
-
-/*Función que uso para agregar la clase currentuser cuando el usuario es Paco, le invoco desde board.component.html*/
-isUser(username) {
-  if (username === 'Paco') {
-    return true;
-  } else {
-    return false;
+  ngOnInit() {
   }
-}
+
+  /*Función que uso para agregar la clase currentuser cuando el usuario es Paco, le invoco desde board.component.html*/
+  isUser(username) {
+    if (username === 'Paco') {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 }
