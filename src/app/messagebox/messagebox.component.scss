@@ -1,5 +1,57 @@
 @import '~sass/variables';
 
+/*
 button {
-    background: $primary-color;
+    background: $primary;
+}
+*/
+.chat-message__wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $secondary;
+    padding: calc( #{$gap}*2 );
+    
+}
+
+.chat-message__box {
+    display: flex;
+    background: $white;
+    border-radius: $radius;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+}
+
+.chat-message__input {
+    padding: calc( #{$gap}*1.5 );
+    width: 70%;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.chat-message__send-button {
+    padding: calc( #{$gap}*1.5 );
+    width: 30%;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: $primary;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 2px;
+        height: 40%;
+        background: $secondary;
+        position: absolute;
+        left: 0;
+    }
 }

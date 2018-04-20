@@ -1,3 +1,8 @@
-<input [(ngModel)]="username" type="text" placeholder="Nombre de usuario" /><br/>
-<textarea [(ngModel)]="messagetext" [placeholder]="placeholder"></textarea><br/>
-<button (click)="emitEvent()">{{label}}</button>
+<!--<input [(ngModel)]="username" type="text" placeholder="Nombre de usuario" />-->
+
+<section class="chat-message__wrapper">
+    <div class="chat-message__box">
+        <textarea [(ngModel)]="messagetext" [placeholder]="placeholder" class="chat-message__input"></textarea>
+        <button (click)="emitEvent()" class="chat-message__send-button">{{label}}</button>
+    </div>
+</section>

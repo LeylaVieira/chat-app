@@ -1,4 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>{{title}}</h1>
-<chat-board [messages]="messages"></chat-board>
-<chat-messagebox (clicked)="addMessage($event)"></chat-messagebox>
+<article class="chat-app__wrapper">
+    <header class="chat-app__header">
+        <h1 class="chat-app__title">{{title}}</h1>
+    </header>
+    <chat-board [messages]="messages"></chat-board>
+    <chat-messagebox (clicked)="addMessage($event)"></chat-messagebox>
+</article>

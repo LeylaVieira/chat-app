@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Chat';
+  title = 'FICTIZIA GROUP';
   messages: Array<any> = [];
   addMessage( ev ) {
     // console.info(ev);

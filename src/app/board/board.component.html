@@ -1,6 +1,13 @@
 <!--<div *ngFor="let message of messages" [style.color]="(message.username === 'Yo') ? 'red' : 'green'" >{{ message.username }} - {{ message.messagetext }}</div><br/>-->
 <!--<div *ngFor="let message of messages" class="message" [class.currentuser]="message.username === 'Paco'" >{{ message.username }} - {{ message.messagetext }}</div>-->
 
-<div *ngFor="let message of messages" class="message" [ngClass]="{currentuser: isUser(message.username)}">{{ message.username }} - {{ message.messagetext }}</div>
+<!--<div *ngFor="let message of messages" class="message" [ngClass]="{currentuser: isUser(message.username)}">{{ message.username }} - {{ message.messagetext }}</div>-->
 <!--isUser(nombreusuario) <es una función que está en board.component.ts>-->
 
+<section class="chat-board__wrapper">
+        
+    <div *ngFor="let message of messages" [ngClass]="{'my-user': isUser(message.username)}" class="bubble-message__wrapper">
+        <p class="bubble-message__text">{{ message.username }} - {{ message.messagetext }}</p>      
+    </div>
+
+</section>

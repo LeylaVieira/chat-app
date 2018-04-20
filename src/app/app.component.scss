@@ -1,0 +1,26 @@
+@import '~sass/variables';
+
+.chat-app__wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chat-app__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: $primary;
+    color: $white;
+    padding: calc( #{$gap}*2 );
+    text-align: center;
+}
+
+.chat-app__title {
+    color: inherit;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}

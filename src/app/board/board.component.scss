@@ -1,7 +1,56 @@
-.message {
-    padding: 10px;
+@import '~sass/variables';
+
+.chat-board__wrapper {
+    background: $white;
+    padding: 0 calc( #{$gap}*2 );
+    overflow-y: scroll;
+    margin-top: $height-header;
+    height: calc( 100vh - (#{$height-header} + #{$height-box-message}) );
 }
 
-.currentuser {
-    background: aliceblue;
+.bubble-message__avatar-user {
+    width: $avatar_size;
+    height: $avatar_size;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: $gap;
+    margin-bottom: $gap;
+
+    img {
+        width: 100%;
+        filter: grayscale(0.8);
+    }
+}
+
+.bubble-message__text {
+    padding: calc( #{$gap}*1.5 );
+    background: $secondary;
+    margin-bottom: $gap;
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+    border-bottom-left-radius: $radius;
+    width: 80%;
+    line-height: 1.2em;
+}
+
+.bubble-message__wrapper {
+    
+    &.my-user {
+        text-align: right;
+
+        .bubble-message__avatar-user {
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        .bubble-message__text {
+            border-top-left-radius: $radius;
+            border-top-right-radius: 0;
+            background: $primary;
+            color: $white;
+            margin-right: 0;
+            margin-left: auto;
+        }
+    }
+    
 }
